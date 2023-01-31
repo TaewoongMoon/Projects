@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Assignment</title>
+  </head>
+  <body>
+    <input
+      id="circle_one"
+      onkeyup="circleGroup.inputValue()"
+      placeholder="1-80사이의 숫자를 입력해주세요"
+      type="number"
+    />
+    <script>
+      const circleGroup = { circleArray: [] };
+      circleGroup.inputValue = function () {
+        const number = document.getElementById('circle_one');
+        if (number.value < 0 || number.value > 80) {
+          alert('숫자를 다시한번 확인하여 입력해주시기 바랍니다.');
+          number.value = '';
+          return;
+        }
+        this.circleNumber = number.value;
+        console.log('this', this);
+        number.value = '';
+      };
+    </script>
+  </body>
+</html>
