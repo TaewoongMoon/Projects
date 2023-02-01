@@ -13,3 +13,5 @@ console.log(a);
 
 a **= 2;
 console.log(a);
+
+const hello = 'hello';
