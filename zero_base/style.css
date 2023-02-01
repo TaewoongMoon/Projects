@@ -1,0 +1,14 @@
+.title-size {
+	font-size: 32px;
+}
+.title-weight {
+	font-weight: bold;
+}
+.title-color {
+	color: red;
+}
+#unique {
+	color: blue;
+	font-size: 32px;
+	font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+        html : HyperText Markup Language
+        개발자가 사용자에게 보여주고 싶은 컨텐츠를 브라우저가 읽을 수 있도록 만들어놓은 문서
+        브라우저의 뼈대라고 부른다.
+        <tag>의 집합체
+    -->
+	<head>
+		<!-- CSS style 적용 우선순위:
+        1. 인라인 style
+        2. id
+        3. class
+        4. 태그이름
+    -->
+		<style>
+			div {
+				font-size: 36px;
+				color: red;
+				font-weight: bold;
+			}
+			.temp {
+				color: blue;
+				font-weight: bold;
+				font-size: 36px;
+			}
+			#heading {
+				color: orange;
+				font-weight: bold;
+				font-size: 36px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+            HTML: 웹페이지의 내용
+            CSS: 웹페이지의 디자인
+        -->
+		<p style="font-size: 24px; font-weight: bold; color: darkblue">
+			안녕하세요.
+		</p>
+		<div>반갑습니다.</div>
+		<p class="temp" id="heading">어떤 속성이 적용될려나요?</p>
+	</body>
+</html>
