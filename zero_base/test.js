@@ -1,12 +1,20 @@
-function Person(name, gender) {
-	this.name = name;
-	this.gender = gender;
-	console.log('this', this);
-}
+var addCoffee = function (name) {
+	return new Promise(function (resolve) {
+		setTimeout(function () {
+			resolve(name);
+		}, 500);
+	});
+};
 
-function Student(name, gender, school) {
-	this.school = school;
-	Person.call(this, name, gender);
-}
+var coffeeMaker = async function () {
+	var coffeeList = '';
+	var _addCoffee = async function (name) {
+		coffeeList += (coffeeList ? ',' : '') + (await addCoffee(name));
+		return coffeeList;
+	};
 
-var by = new Student('보영', 'female', '단국대');
+	let result = await _addCoffee('에스프레소');
+	console.log(result);
+};
+
+coffeeMaker();
