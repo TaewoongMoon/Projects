@@ -87,14 +87,35 @@ margin-right: 10px;
 }
 </style>
 <script>
+    $(document).ready(function(){
+        listing();
+    })
+
+    function listing() {
     $.ajax({
         type: "GET",
-        url: "http://openapi.seoul.go.kr:8088/6d4d776b466c656533356a4b4b5872/json/RealtimeCityAir/1/99",
+        url: "http://spartacodingclub.shop/web/api/movie",
         data: {},
         success: function(response){
-        console.log(response.RealtimeCityAir.row);
+            $('#cards-box').empty();
+            for(let i = 0; i < response['movies'].length; i ++){
+              let cardElement = `<div class="col">
+                <div class="card h-100">
+                <img src="${response['movies'][i]['image']}"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">${response['movies'][i]['title']}</h5>
+                <p class="card-text">${response['movies'][i]['desc']}</p>
+                <p>⭐⭐⭐</p>
+                <p class="mycomment">${response['movies'][i]['comment']}</p>
+                </div>
+                </div>
+                               </div>`
+                $('#cards-box').append(cardElement);
+            }
     }
     })
+    }
 function open_box(){
 $('#post-box').show()
 }
