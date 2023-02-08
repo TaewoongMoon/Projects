@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google</title>
+		<style>
+			html {
+				height: 100%;
+			}
+			body {
+				margin: 0;
+				font-size: 14px;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #bdc1c6;
+				background: #202124;
+				height: 100%;
+			}
+			.wrapper {
+				display: flex;
+				justify-content: flex-end;
+				height: 60px;
+				box-sizing: border-box;
+				padding: 6px;
+			}
+			.mid-wrapper {
+				max-height: 290px;
+				min-height: 92px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.menu-wrapper {
+				box-sizing: border-box;
+				width: 251.59px;
+				flex-shrink: 0;
+				padding-left: 32px;
+				padding-right: 4px;
+				display: flex;
+				align-items: center;
+			}
+			.gmailImages-wrapper {
+				display: flex;
+				padding-left: 15px;
+			}
+			.menuProfile-wrapper {
+				width: 96px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.google-wrapper {
+				height: 100%;
+				margin-top: 198px;
+			}
+			.search-wrapper {
+				width: 100%;
+				height: 140px;
+				box-sizing: border-box;
+				padding: 20px;
+			}
+			.search-mid-wrapper {
+				display: flex;
+				max-width: 584px;
+				width: 100%;
+				height: 44px;
+				margin: 0 auto;
+				background: #202124;
+				border: 1px solid #5f6368;
+				border-radius: 24px;
+			}
+			.search-mid-wrapper:hover {
+				background-color: #303134;
+				box-shadow: 0 1px 6px 0 #171717;
+				border-color: rgba(223, 225, 229, 0);
+			}
+			.search-mid-double-wrapper {
+				display: flex;
+				flex: 1;
+				padding: 5px 8px 0px 14px;
+				flex-wrap: wrap;
+			}
+			.icons-wrapper {
+				width: 33px;
+				height: 44px;
+				box-sizing: border-box;
+				padding-right: 13px;
+				margin-top: -5px;
+				display: flex;
+				align-items: center;
+			}
+			.input-wrapper {
+				width: 443px;
+				height: 34px;
+				outline: none;
+				margin: 0;
+				margin-top: -1px;
+				padding: 0;
+				color: #e8eaed;
+				border: none;
+				background-color: transparent;
+				font-size: 16px;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+			}
+			#images {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			#box {
+				width: 40px;
+				height: 40px;
+				padding: 8px;
+				box-sizing: border-box;
+			}
+			#logo-wrapper {
+				cursor: pointer;
+				text-decoration: none;
+				padding: 4px;
+				box-sizing: border-box;
+				width: 40px;
+				height: 40px;
+			}
+			#logo {
+				margin: 0;
+				width: 32px;
+				height: 32px;
+				background-size: 32px 32px;
+				box-sizing: border-box;
+				border-radius: 50%;
+			}
+			#menu {
+				fill: white;
+			}
+			#finder {
+				fill: #9aa0a6;
+			}
+			img[alt='google-image'] {
+				max-height: 92px;
+				max-width: 272px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="menu-wrapper">
+				<div class="gmailImages-wrapper">
+					<div id="gmail">
+						<a href="" id="gmail">Gmail</a>
+					</div>
+					<div id="images">
+						<a href="">Images</a>
+					</div>
+				</div>
+				<div class="menuProfile-wrapper">
+					<div id="box">
+						<svg focusable="false" viewBox="0 0 24 24">
+							<path
+								id="menu"
+								d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+							></path>
+						</svg>
+					</div>
+					<div id="logo-wrapper">
+						<img
+							src="https://lh3.googleusercontent.com/ogw/AAEL6sgQeTPrxqR9UC0uJeSoxDbpXka8ToHu5DoQp94o=s64-c-mo"
+							alt="userLogo"
+							id="logo"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid-wrapper">
+			<div class="google-wrapper">
+				<img
+					src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+					alt="google-image"
+				/>
+			</div>
+		</div>
+		<div class="search-wrapper">
+			<div class="search-mid-wrapper">
+				<div class="search-mid-double-wrapper">
+					<div class="icons-wrapper">
+						<svg
+							id="finder-box"
+							focusable="false"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+						>
+							<path id = "finder" d = "M 15.5 14 h -0.79 l -0.28 -0.27 A 6.471
+							6.471 0 0 0 16 9.5 A 6.5 6.5 0 1 0 9.5 16 c 1.61 0 3.09 -0.59 4.23
+							-1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 -5 Z m -6 0 C
+							7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 14 9.5 S 11.99 14
+							9.5 14 Z"
+						</svg>
+					</div>
+					<input class="input-wrapper" type="text" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
