@@ -87,6 +87,11 @@ p {
 	font-size: 10px;
 	justify-content: space-around;
 }
+
+.top-left :nth-child(1):hover {
+	color: red;
+}
+
 .top-center {
 	grid-area: top-center;
 	display: flex;
