@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Propagation</title>
+		<style>
+			#a {
+				border: 2px solid red;
+				padding: 40px;
+				height: 300px;
+			}
+
+			#b {
+				border: 2px solid blue;
+				height: 200px;
+				padding: 40px;
+			}
+
+			#c {
+				border: 2px solid yellow;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<div id="b">
+				<div id="c"></div>
+			</div>
+		</div>
+		<script>
+			var aBox = document.querySelector('#a');
+			console.log(aBox);
+			var bBox = document.querySelector('#b');
+			var cBox = document.querySelector('#c');
+
+			aBox.addEventListener(
+				'click',
+				function (ev) {
+					console.log('click A Capturing');
+				},
+				true,
+			);
+
+			bBox.addEventListener(
+				'click',
+				function (ev) {
+					console.log('click B Capturing');
+				},
+				true,
+			);
+
+			cBox.addEventListener(
+				'click',
+				function (ev) {
+					ev.stopPropagation();
+					console.log('click C Capturing');
+				},
+				true,
+			);
+
+			aBox.addEventListener('click', function (ev) {
+				console.log('click A Bubbling');
+			});
+
+			bBox.addEventListener('click', function (ev) {
+				console.log('click B Bubbling');
+			});
+
+			cBox.addEventListener('click', function (ev) {
+				console.log('click C Bubbling');
+			});
+		</script>
+	</body>
+</html>
