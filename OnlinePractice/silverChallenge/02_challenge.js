@@ -36,7 +36,9 @@ console.log(list3[3]);
 
 // [미션] 위 예시와 결과적으로 동일한 로직을 수행하도록 아래 함수 내용을 적절히 채워주세요.
 function logEach(list) {
-  // TODO
+	for (let i = 0; i < list.length; i++) {
+		console.log(list[i]);
+	}
 }
 
 logEach(list1);

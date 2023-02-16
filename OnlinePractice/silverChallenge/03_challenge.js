@@ -30,12 +30,14 @@ console.log(list[2]);
 
 // [미션] 위 예시와 결과적으로 동일한 로직을 수행하도록 아래 함수 내용을 적절히 채워주세요.
 function forEach(list, callback) {
-  // TODO
+	for (let i = 0; i < list.length; i++) {
+		callback(list[i]);
+	}
 }
 
 forEach(list1, function (num) {
-  alert(num);
+	alert(num);
 });
 forEach(list2, function (num) {
-  console.log(num);
+	console.log(num);
 });

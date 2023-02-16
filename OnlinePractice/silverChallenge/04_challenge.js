@@ -6,7 +6,7 @@
  * 어떤 배열이 주어졌을때, 특정 요소의 인덱스를 찾는 로직을 완성해보세요.
  *
  * TODO라고 표시되어 있는 부분의 내용을 채워주세요.
- * 
+ *
  * 단,배열의 forEach 메소드는 사용할 수 없는 점 참고해주세요.
  *
  *
@@ -18,9 +18,9 @@ const list2 = [8, 9, 10];
 let indexOfTen = -1;
 
 for (let i = 0; i < list1.length; i++) {
-  if (list1[i] === 10) {
-    indexOfTen = i;
-  }
+	if (list1[i] === 10) {
+		indexOfTen = i;
+	}
 }
 
 console.log(`list1에서 10은 ${indexOfTen}번쨰 인덱스에 있다.`);
@@ -28,24 +28,24 @@ console.log(`list1에서 10은 ${indexOfTen}번쨰 인덱스에 있다.`);
 let indexOfNine = -1;
 
 for (let i = 0; i < list2.length; i++) {
-  if (list2[i] === 9) {
-    indexOfNine = i;
-  }
+	if (list2[i] === 9) {
+		indexOfNine = i;
+	}
 }
 
 console.log(`list2에서 9는 ${indexOfNine}번쨰 인덱스에 있다.`);
 
 // [2차 예시] 함수를 만들어 개선해본 코드입니다.
 function indexOf(list, target) {
-  let result = -1;
+	let result = -1;
 
-  for (let i = 0; i < list.length; i++) {
-    if (list[i] === target) {
-      result = i;
-    }
-  }
+	for (let i = 0; i < list.length; i++) {
+		if (list[i] === target) {
+			result = i;
+		}
+	}
 
-  return result;
+	return result;
 }
 
 const indexOf10 = indexOf(list1, 10);
@@ -56,12 +56,23 @@ console.log(`list2에서 9는 ${indexOf9}번쨰 인덱스에 있다.`);
 
 // [미션] 앞서 3단계에서 작성했던 forEach 함수를 TODO 부분에 활용하여
 // indexOf 함수 내부의 코드를 개선해보세요.
+
+function forEach(list, callback) {
+	for (let i = 0; i < list.length; i++) {
+		callback(list[i], i);
+	}
+}
+
 function indexOf(list, target) {
-  let result = -1;
+	let result = -1;
 
-  // TODO
-
-  return result;
+	// TODO
+	forEach(list, function (indexValue, index) {
+		if (indexValue === target) {
+			result = index;
+		}
+	});
+	return result;
 }
 
 const index10 = indexOf(list1, 10);
