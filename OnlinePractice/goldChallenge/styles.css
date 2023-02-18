@@ -1,0 +1,14 @@
+* {
+	-webkit-box-sizing: border-box;
+	font-family: 'Black Han Sans', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 48px;
+}
+
+.title {
+	font-size: 3em;
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #222f3e;
+}
