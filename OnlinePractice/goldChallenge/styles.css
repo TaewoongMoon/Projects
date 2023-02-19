@@ -57,3 +57,39 @@ button {
 	width: 100%;
 	height: 100%;
 }
+
+.game_info {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	width: 415px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 23px;
+	color: #222f3e;
+}
+
+.gamer-timer_text {
+	font-size: 23px;
+	color: #222f3e;
+	margin: 0;
+	padding: 0;
+}
+
+.timer_tag {
+	font-size: 23px;
+	color: #eb4d4b;
+	white-space: nowrap;
+}
+
+.gamer-state__text {
+	font-size: 23px;
+	color: #222f3e;
+	margin: 0;
+	padding: 0;
+}
+
+.game-state {
+	font-size: 23px;
+	color: #eb4d4b;
+}
