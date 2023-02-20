@@ -1,0 +1,82 @@
+/*
+
+  이미지 아이콘 사용법을 보여드리기 위한 샘플 코드를 만드는 과정에서 간단하게 작성한 코드이니, 원하신다면 삭제하고 작업하셔도 됩니다.
+
+*/
+
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: black;
+}
+
+header {
+	height: 60px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+}
+.menu-wrapper {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	color: #ffffff;
+	margin: 0 40px;
+	width: 100%;
+}
+
+.menu-right-side-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.stories {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.stories:hover {
+	color: lightgray;
+}
+
+.impact {
+	margin-right: 20px;
+	cursor: pointer;
+}
+.impact:hover {
+	color: lightgray;
+}
+.company {
+	margin-right: 20px;
+	cursor: pointer;
+}
+.company:hover {
+	color: lightgray;
+}
+
+.newsroom {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.newsroom:hover {
+	color: lightgray;
+}
+
+.glass {
+	cursor: pointer;
+}
+.glass:hover {
+	fill: black;
+}

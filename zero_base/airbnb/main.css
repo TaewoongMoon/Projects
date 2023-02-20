@@ -1,0 +1,96 @@
+.wrap {
+	background-color: white;
+	width: 80%;
+	max-width: 1920px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+header {
+	background-color: black;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+	color: white;
+}
+
+header .gnb {
+	display: grid;
+	grid-template-columns: 300px 1fr 300px;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		'logo gnb-menu menu'
+		'search search search';
+}
+
+a {
+	color: white;
+	font-weight: bold;
+}
+
+header > .gnb > .logo {
+	grid-area: logo;
+	display: flex;
+	align-items: center;
+}
+
+header > .gnb > .gnb-menu {
+	grid-area: gnb-menu;
+	display: flex;
+}
+header > .gnb > .gnb-menu > ul {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+header > .gnb > .gnb-menu > ul > .active::before {
+	content: '';
+	height: 2px;
+	width: 15px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+header > .gnb > .gnb-menu > ul > li:hover::before {
+	content: '';
+	height: 2px;
+	width: 5px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+header > .gnb > .gnb-menu > ul > .active:hover {
+	color: white;
+}
+header > .gnb > .gnb-menu > ul > .active:hover::before {
+	content: '';
+	height: 2px;
+	width: 15px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+header > .gnb > .gnb-menu > ul > li:hover {
+	color: gray;
+}
+li {
+	cursor: pointer;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+header > .gnb > .menu {
+	grid-area: menu;
+}
+header > .gnb > .search {
+	grid-area: search;
+}
