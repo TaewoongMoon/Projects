@@ -46,3 +46,7 @@ console.log(description);
 console.log(`string
 with
 multiple lines`);
+
+// Strings and Template Literals
+
+const newDescription = `${country} is in ${continent}, and its ${population} people speak in ${language}`;
