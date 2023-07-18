@@ -38,8 +38,8 @@ const description =
 	population +
 	' ' +
 	'people speak in' +
-	' ' +
-	language;
+	git;
+' ' + language;
 console.log(description);
 
 // multi line string을 만들 때는 `` (백틱을 사용하는것이 유용하다).
@@ -50,3 +50,16 @@ multiple lines`);
 // Strings and Template Literals
 
 const newDescription = `${country} is in ${continent}, and its ${population} people speak in ${language}`;
+
+// Equality Operators: ==vs. ===
+const numNeighbours = Number(
+	prompt('How many neighbour countries do your country have?'),
+);
+
+if (numNeighbours == 1) {
+	console.log('Only 1 border');
+} else if (numNeighbours > 1) {
+	console.log('More than  1 border');
+} else {
+	console.log('No borders');
+}
