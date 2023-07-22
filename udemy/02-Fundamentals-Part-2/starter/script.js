@@ -21,3 +21,17 @@ function describePopulation(country, population) {
 	const countryPercentage = percentageOfWorld1(population);
 	return `${country} has ${population}, which is about ${countryPercentage} of the world`;
 }
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[1]);
+
+console.log(friends.length);
