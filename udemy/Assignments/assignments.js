@@ -84,3 +84,12 @@ switch (language) {
 	default:
 		console.log('Great language too :D');
 }
+
+// Introduction to Objects
+const myCountry = {
+	country: 'South Korea',
+	capital: 'Seoul',
+	language: 'Korean',
+	population: '50 million',
+	neighbours: 'Japan and China',
+};
