@@ -93,3 +93,21 @@ const myCountry = {
 	population: '50 million',
 	neighbours: 'Japan and China',
 };
+
+// Iteration: The for Loop
+for (let i = 1; i <= 50; i++) {
+	console.log(`Voter number ${i} is currently voting`);
+}
+
+// Looping Backwards and Loops in Loops
+const listOfNeighbours = [
+	['Canada', 'Mexico'],
+	['Spain'],
+	['Norway', 'Sweden', 'Russia'],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+	for (j = 0; j < listOfNeighbours[i].length; j++) {
+		console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+	}
+}
