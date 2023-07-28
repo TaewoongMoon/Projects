@@ -6,13 +6,12 @@
 //   })
 // );
 
-const randomNumber = Math.trunc(Math.random() * 20) + 1;
+let randomNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
-document.querySelector('.number').textContent = randomNumber;
 
 document.querySelector('.check').addEventListener('click', () => {
   const inputValue = Number(document.querySelector('.guess').value);
-  console.log(inputValue, typeof inputValue);
+
   if (!inputValue) {
     document.querySelector('.message').textContent = 'No Number 🛑';
   } else if (inputValue > randomNumber) {
@@ -33,5 +32,17 @@ document.querySelector('.check').addEventListener('click', () => {
     }
   } else if (inputValue === randomNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
+    document.querySelector('.number').textContent = randomNumber;
+    document.querySelector('body').style.backgroundColor = '#60b347';
   }
+});
+
+document.querySelector('.again').addEventListener('click', () => {
+  score = 20;
+  randomNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector('.score').textContent = score;
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('input').value = '';
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.message').textContent = 'Start guessing...';
 });
