@@ -1,0 +1,14 @@
+Javascript needs "Javascript Engine" in order to run in a browser.
+
+Each browser has its own engine(V8, Javascript Core, Spider Monkey, etc).
+
+Because the browser has its own distinct engine, it follows a common grammar structure,
+which is "ECMASCript"
+
+ECMASCript -> 주기적으로 업데이트 되며 ES6(2015)에 가장 많이 업데이트 됨. 엔진 별로 ES 버전 호환이 다름
+
+자바스크립트란? -> just-in-time interpreting language. dynamic, prototype-based multi-paradigm language.
+자바스크립트는 일급객체이면서 scripting 언어이다.
+
+자바스크립트의 핵심은 파일이 실행되면서 자바스크립트 파일의 코드들을 읽는 언어 형태다.(Scripting language)
+자바스크립트는 컴파일링 language와는 구조가 다르다.
