@@ -29,3 +29,8 @@ ex. 123, '123', {}
 
     }; (메소드)
 }
+
+자바스크립트는 객체 지향형 프로그래밍이다 - Javascript is a prototype based programming language.
+그렇기에 생성자 함수를 통해서 객체를 만들 수 있는데, ES6 도입 이후로 Class를 통해서 객체를 만들 수도 있다.
+
+클래스(Class): 객체를 생성할 수 있는 템플릿(청사진, 틀)
